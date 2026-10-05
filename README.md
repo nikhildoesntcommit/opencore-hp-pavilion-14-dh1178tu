@@ -26,10 +26,10 @@ This repository provides working OpenCore EFI configurations for the HP Pavilion
 The `EFI-touchscreen` variant enables touchscreen support. The `EFI-no-touchscreen` variant disables it.
 
 ### Untested
-- [] HDMI port
+- [ ] HDMI port
 
 ### Not Working
-- [] Fingerprint reader, due to being incompatible with macOS
+- [ ] Fingerprint reader, due to being incompatible with macOS
 
 > [!IMPORTANT]
 >
