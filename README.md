@@ -6,7 +6,7 @@ This repository provides working OpenCore EFI configurations for the HP Pavilion
 ![macOS Tahoe desktop](assets/desktop-overview.jpeg)
 > [!NOTE]
 >
-> The image shows "MacBook Pro", this is macOS reporting the configured SMBIOS; the host hardware is the Pavilion.
+> The image shows "MacBook Pro" along with other incorrectly mentioned hardware, this is macOS reporting the configured SMBIOS; the host hardware is the Pavilion. More information regarding the actual hardware is listed below under "System Specifications".
 
 ---
 
@@ -29,11 +29,12 @@ The `EFI-touchscreen` variant enables touchscreen support. The `EFI-no-touchscre
 - [ ] HDMI port
 
 ### Not Working
-- [ ] Fingerprint reader, due to being incompatible with macOS
+- [ ] Fingerprint reader - due to being incompatible with macOS
+- [ ] AirDrop — unavailable with the included `itlwm.kext` and HeliPort configuration.
 
 > [!IMPORTANT]
 >
-> Audio and WiFi both require VoodooHDA and the HeliPort app, which will be configured in post-install.
+> Wi-Fi requires HeliPort, which is installed after macOS setup. Audio requires a separate VoodooHDA-Tahoe installation; it is not provided by the EFI alone. Steps to set these up are in the "Post-Install" section.
 
 ## System Specifications
 
@@ -254,7 +255,7 @@ This EFI was tested on macOS Tahoe 26.7.1. Other macOS versions are untested; ve
 
 These configurations are specific to the HP Pavilion x360 Convertible 14-dh1178tu. Compatibility with other 14-dh1xxx models has not been established; their hardware and firmware differences may require a separately validated EFI.
 
-This EFI contains only Itlwm.kext, however if you would want to use certain features like AirDrop you may need AirPortItlwm. You would need to disable the Itlwm.kext in `Kernel → Add` and then install AirPortItlwm and add it's entry to `Kernel → Add`. AirPortItlwm is more unstable and would require root patching via OCLP-Mod in post-install for Tahoe.
+AirportItlwm is a possible alternative worth investigating for Apple wireless features, but it is not included or tested in this EFI. Tahoe compatibility and AirDrop functionality are not guaranteed.
 
 ### Making the USB
 
