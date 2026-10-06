@@ -116,7 +116,6 @@ EFI
     │   ├── OpenRuntime.efi
     │   └── ResetNvramEntry.efi
     ├── Kexts
-    │   ├── AppleALC.kext
     │   ├── BlueToolFixup.kext
     │   ├── BrightnessKeys.kext
     │   ├── CtlnaSDXC.kext
@@ -185,7 +184,6 @@ EFI
     │   ├── OpenRuntime.efi
     │   └── ResetNvramEntry.efi
     ├── Kexts
-    │   ├── AppleALC.kext
     │   ├── BlueToolFixup.kext
     │   ├── BrightnessKeys.kext
     │   ├── CtlnaSDXC.kext
