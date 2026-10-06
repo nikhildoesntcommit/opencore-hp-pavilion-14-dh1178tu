@@ -260,6 +260,7 @@ AirportItlwm is a possible alternative worth investigating for Apple wireless fe
 * Follow [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/#making-the-installer) to make the USB installer if not already made.
 * Download the latest version of [HeliPort](https://github.com/OpenIntelWireless/heliport) and copy the .dmg to the installer.
 * Mount the ESP (EFI System Partition), and add the EFI folder to the ESP.
+  Make sure to rename your EFI folder exactly "EFI".
 
 ## Installation Process
 
